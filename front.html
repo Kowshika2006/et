@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Booking - Green Theme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #7cb06d;
+            color: #333;
+        }
+        header {
+            background-color: #1e7f42;
+            color: #FFFFFF;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            float: left;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        footer {
+            background-color: #1e7f42;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="email"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #1e7f42;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #155e33;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Elegant Booking</h1>
+        <p>Experience seamless and reliable travel and accommodation booking like never before.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#booking">Booking</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Elegant Booking, we specialize in connecting travelers with the perfect accommodations, transportation, and experiences. Whether you're going on a business trip or a family vacation, we ensure that every aspect of your journey is comfortable and enjoyable.</p>
+        <p>Our platform offers a wide range of services, from booking luxurious hotels to arranging seamless transportation and exciting tours. We take care of everything so you can focus on making memories.</p>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <h2>Book Your Stay</h2>
+        <div class="form-container">
+            <form action="send_email.php" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="checkin">Check-In Date</label>
+                <input type="date" id="checkin" name="checkin" required>
+
+                <label for="checkout">Check-Out Date</label>
+                <input type="date" id="checkout" name="checkout" required>
+
+                <label for="transport">Preferred Transport</label>
+                <select id="transport" name="transport" required>
+                    <option value="car">Car</option>
+                    <option value="bus">Bus</option>
+                </select>
+
+                <label for="message">Special Requests</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any special requests or details"></textarea>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a comprehensive range of travel-related services to ensure that every aspect of your journey is covered:</p>
+        <ul>
+            <li><strong>Accommodation Booking:</strong> Choose from a wide range of hotels, resorts, and guesthouses worldwide.</li>
+            <li><strong>Transportation:</strong> Book reliable cars, buses, and flights at competitive rates.</li>
+            <li><strong>Tour Packages:</strong> Explore exciting tourist destinations with our curated tour packages.</li>
+            <li><strong>Custom Travel Solutions:</strong> Personalized travel packages tailored to your preferences and needs.</li>
+            <li><strong>24/7 Customer Support:</strong> Our dedicated team is always available to assist you with any inquiries.</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            <p>"Elegant Booking made our vacation stress-free. From the hotel to the transport, everything was arranged perfectly. I highly recommend their services!"</p>
+            <footer>- Sarah Johnson, New York</footer>
+        </blockquote>
+        <blockquote>
+            <p>"A seamless booking experience! The team was incredibly helpful and made sure everything went smoothly. Thank you, Elegant Booking!"</p>
+            <footer>- Mark Thompson, London</footer>
+        </blockquote>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <h3>How can I make a booking?</h3>
+        <p>You can make a booking by filling out the booking form on our website. Once submitted, our team will process your request and confirm your booking.</p>
+
+        <h3>What payment methods do you accept?</h3>
+        <p>We accept all major credit cards, debit cards, and online payment methods such as PayPal.</p>
+
+        <h3>Can I cancel or modify my booking?</h3>
+        <p>Yes, you can modify or cancel your booking up to 48 hours before your scheduled check-in time. Please refer to our cancellation policy for more details.</p>
+
+        <h3>Is it safe to book through your website?</h3>
+        <p>Yes, our website is SSL-secured, and we follow strict data protection protocols to ensure your personal and payment information remains safe.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, concerns, or require assistance, feel free to reach out to us:</p>
+        <ul>
+            <li><strong>Email:</strong> support@elegantbooking.com</li>
+            <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+            <li><strong>Address:</strong> 123 Elegant Street, Suite 45, New York, NY 10001</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Elegant Booking. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
